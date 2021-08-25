@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Quiz Master - Add Questions
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/addques.css">
+	<link rel="icon" href="assets/imgs/favicon.png">
+</head>
+<body>
+	<main class="main-content" id="main">
+		<div class="container-fluid row pt-5">
+			<div class="col-12 col-lg-4 col-md-4 col-sm-12">
+				<h4 class="alert alert-info text-center">Add Questions</h4>
+				<form class="form">
+					<fieldset>
+						<label>Question No.</label>
+						<input type="number" id="qno" class="form-control" placeholder="Enter Question Number" required>
+					</fieldset>
+					<fieldset>
+						<label>Question</label>
+						<textarea class="form-control" id="question" rows="3" placeholder="Enter Question Text Here" required></textarea>
+					</fieldset>
+					<fieldset>
+						<label>Option 1</label>
+						<input type="text" id="opt-1" class="form-control" placeholder="Enter Option 1" required>
+					</fieldset>
+					<fieldset>
+						<label>Option 2</label>
+						<input type="text" id="opt-2" class="form-control" placeholder="Enter Option 2" required>
+					</fieldset>
+					<fieldset>
+						<label>Option 3</label>
+						<input type="text" id="opt-3" class="form-control" placeholder="Enter Option 3" required>
+					</fieldset>
+					<fieldset>
+						<label>Option 4</label>
+						<input type="text" id="opt-4" class="form-control" placeholder="Enter Option 4" required>
+					</fieldset>
+					<fieldset>
+						<label>Correct</label>
+						<select class="form-control" id="correct">
+							<option value="0">Select</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</fieldset>
+					<input type="button" id="subBtn" class="mt-4 btn btn-success form-control" value="Save">
+					<input type="button" id="update" class="mt-4 btn btn-warning text-white form-control" value="Update" style="display: none">
+				</form>
+			</div>
+			<div class="col-12 col-lg-8 col-md-8 col-sm-12 table-col">
+				<h4 class="alert alert-info text-center">Questions</h4>
+				<table class="table table-striped">
+					<thead class="table-dark text-white">
+						<tr>
+							<th>Qno</th>
+							<th class="mobile-hidden">Question</th>
+							<th>Correct</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody id="main-table">
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</main>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/addQuestions.js"></script>
+</body>
+</html>

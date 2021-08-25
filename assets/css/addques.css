@@ -1,0 +1,30 @@
+body{
+	background: #1f2833;
+}
+fieldset label {
+	color: white;
+}
+fieldset {
+	margin-top: 10px;
+}
+table td {
+	color: white;
+}
+select > option{
+	background: #283655;
+	color: white;
+}
+.row {
+	margin: 0px;
+}
+@media only screen and (max-width: 768px){
+	.edit, .del {
+		padding: 0px 2px;
+	}
+	.table-col {
+		margin-top: 30px;
+	}
+	.mobile-hidden{
+		display: none;
+	}
+}
